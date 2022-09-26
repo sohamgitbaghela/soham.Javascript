@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tic-Tac-Toe</title>
+    
+<style>
+    *{
+        margin: 0px;
+    }
+    #mycontainer{
+        height: 500px;
+        width: 500px;
+        margin-top: 50px;
+        background-color:bisque;
+    }
+    .mybox{
+        height: 30.5%;
+        width: 32.5%;
+        float: left;
+        
+    }
+    #mycontainer button
+    {
+        height: 80%;
+        width: 80%;
+        margin-top: 10%;
+        font-weight: 30px;
+    }
+    #response{
+        height: 25px;
+        width: 150px;
+        background-color: yellow;
+        border: 1px solid black;
+        border-radius: 1px;
+        font-weight: 20px;
+    }
+</style>
+</head>
+<body>
+<center>
+    <div id="container">
+        <!-- onclick="myMethod()" -->
+        <div id="mycontainer">
+            <div class="mybox" ><button class="mybtn" name="1" onclick="myMethod1();checking()" id="firstbox" ></button></div>
+            <div class="mybox" ><button class="mybtn" name="2" onclick="myMethod2();checking()" id="secondbox" ></button></div>
+            <div class="mybox" ><button class="mybtn" name="3" onclick="myMethod3();checking()" id="thirdbox" ></button></div>
+            <div class="mybox" ><button class="mybtn" name="4" onclick="myMethod4();checking()" id="fourbox" ></button></div>
+            <div class="mybox" ><button class="mybtn" name="5" onclick="myMethod5();checking()" id="fivebox" ></button></div>
+            <div class="mybox" ><button class="mybtn" name="6" onclick="myMethod6();checking()" id="sixbox" ></button></div>
+            <div class="mybox" ><button class="mybtn" name="7" onclick="myMethod7();checking()" id="sevenbox" ></button></div>
+            <div class="mybox" ><button class="mybtn" name="8" onclick="myMethod8();checking()" id="eightbox" ></button></div>
+            <div class="mybox" ><button class="mybtn" name="9" onclick="myMethod9();checking()" id="ninebox" ></button></div>
+            <div class="thisbtn"> <button id="reset" onclick="clearAll()" >Reset</button></div><br><br>
+        </div><br><br>
+    </div>
+    <font id="response"></font>
+</center>
+<script src="../js/tictactoe.js"></script>
+
+</body>
+</html>
